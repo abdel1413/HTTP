@@ -47,5 +47,6 @@ function ReadFileText(file) {
     reader.addEventListener("error", () => {
       reject(reader.error);
     });
+    reader.readAsText(file);
   });
 }
