@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="example/message.html">
+        <p>Name: <input type="text" name="name"></p>
+        <p>Message:<br> <textarea name="message" id="" cols="30" rows="10"></textarea></p>
+        <p><button type="submit"> Send</button></p>
+    </form>
+   <p><input type="text" value="Abc"> Text</p>
+   <p><input type="password" id="pass" value='Abc' > password</p>
+   <p><input type="checkbox" checked > checbox</p>
+   <p><input type="radio" value="A" name="choice">
+<input type="radio" value="B" name="choice" checked>
+<input type="radio" value="C" name="choice"> Radio</p>
+<p> <input type="file">File</p>
+<select name="select" id="">
+    <option value="">Pancakes</option>
+    <option value="">Ice cream </option>
+    <option value="">Pudding</option>
+</select>
+<p><input type="text" id="focus">focus</p>
+<input type="text" tabindex="1"><a href="."> help</a>
+<p><button onclick="console.log('ok')" tabindex="2">Ok</button></p>
+<p><button>I am all right</button></p>
+<p><button disabled>I am disabled and faded</button></p>
+
+</body>
+<script>
+ let a = (document.querySelector("#pass"))
+   document.querySelector('#focus').focus()   
+ console.log(document.activeElement.tagName)
+ document.querySelector('#focus').blur()
+ console.log(document.activeElement.tagName)
+</script>
+</html>
+
+<!-- 
+    Note:
+    when send btn is click, the form is sent as a request.
+    The info in the form is added at the end of the action URL 
+    as a query strg.
+    http://127.0.0.1:5500/example/message.html?name=Del&message=sahsafmasf
+
+    the  question mark "?" indicates the end of the path part of the URL
+     and the starting of the query.
+    the ampersand char (&) separates the pairs of names and values 
+    (here name attribute and content of those elements) 
+    "name=Del&message=sahsafmasf"
+    
+
+    If we change method GET to POST, the  HTTP request will put the query
+    string in the body rather than adding it to the URL
+
+    POST /example/message.html HTTP/1.1
+    Content-length: 24
+    Content-type: application/x-www-form-urlencoded  
+
+    "name=Jean&message=Yes%3F"
+
+    Note: For request that don't have side effect or to ask simple info,
+     we can use GET  but if we want to change or put something on server
+     we need to use for exp POST
+ -->
