@@ -17,8 +17,6 @@ let select = document.querySelector("select");
 let output = document.querySelector("#output");
 //output.style.color = "blue";
 
-console.log(output.innerHTML);
-
 select.addEventListener("change", () => {
   let number = 0;
   for (let option of Array.from(select.options)) {

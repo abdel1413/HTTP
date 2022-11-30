@@ -15,7 +15,6 @@ async function getUsers() {
 //getUsers();
 
 //create a render function to render the users on the screen
-
 async function renderUsers() {
   let users = await getUsers();
   let html = "";

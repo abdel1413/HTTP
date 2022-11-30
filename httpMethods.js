@@ -1,4 +1,15 @@
 /**
+ *  the HTTP protocol works as follow:
+ *  A client sends a request, which contains a method (usually GET)
+ * and a path that identifies a resource.
+ * The server then decides what to do with the request and responds
+ * with a status code and a response body.
+ * Both requests and responses may contain headers that provide
+ * additional information.
+ *
+ * The interface through which browser JavaScript
+ * can make HTTP requests is called fetch
+ *
  * GET /18_http.html HTTP/1.1
  * http has 4 methods:
  * GET to get the resource from the server
@@ -33,4 +44,8 @@
  * PUT and POST do.
  *
  * Error responses don't require body
+ *
+ * Properties like value (for text and select fields) or checked
+ * (for checkboxes and radio buttons) are used to read or set
+ * the field’s content.
  */

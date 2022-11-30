@@ -6,6 +6,14 @@
  * time
  * It has name, length, size, and type properties
  */
+
+/**
+an array-like object,  
+has a length property and properties indexed from zero, but 
+it doesn't have Array 's built-in methods like forEach() or map() . 
+However, it can be converted to a real Array , using one of slice() ,
+ Array.from() , or spread syntax.
+ */
 let input = document.querySelector("input");
 let h2span = document.querySelector("#name");
 console.log(h2span);
