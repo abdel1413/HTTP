@@ -14,7 +14,7 @@ async function fecthAPI() {
   if (res.status === 200) {
     let span = document.createElement("span");
     span.style.color = "blue";
-    span.textContent = `with status ${res.status}  ${res.statusText}`;
+    span.textContent = ` status  ${res.status}  ${res.statusText}`;
     div.textContent = data;
     div.appendChild(span);
   } else if (res.status === 404) {

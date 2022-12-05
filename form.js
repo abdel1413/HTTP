@@ -7,6 +7,13 @@ form.addEventListener("submit", (event) => {
 //change the value name from the first input
 let names = document.querySelectorAll("input");
 
+// for (let n of names) {
+//   console.log(n.value);
+// }
+
+for (let n of Array.from(names)) {
+  console.log(n.value);
+}
 // console.log(names[0].value);
 // if (names[0].value == "enter name") {
 //   names[0].value = "change name";

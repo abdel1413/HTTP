@@ -8,9 +8,9 @@ const types = [
 
 async function showTypes() {
   for (let type of types) {
-    let res = await fetch(url, { headers: { accep: type } });
-    //console.log(`${type}: ${await res.text()}\n`);
-    console.log(res);
+    let res = await fetch(url, { headers: { accept: type } });
+    console.log(`${type}: ${await res.text()}\n`);
+    //console.log(res);
   }
 }
 

@@ -1,4 +1,5 @@
 let body = document.querySelector("body");
+
 async function getUsers() {
   let url = "/example/api.json";
   try {

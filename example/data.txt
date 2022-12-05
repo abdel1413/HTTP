@@ -1,2 +1,2 @@
 this is the content of the text document;
-Hello the world. This is your new trainer;
+Hello world. This is your new trainer;
